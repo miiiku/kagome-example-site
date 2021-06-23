@@ -1,0 +1,67 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Kagome"
+theme = "kagome"
+paginate = 7
+copyright = "© 2021 <a href=\"https://sukoshi.xyz\">Sukoshi</a>."
+hasCJKLanguage = true
+
+[author]
+  name = "Sukoshi"
+  email = "guanquanhong@163.com"
+  description = "梅花鹿的角叫鹿角"
+  avatar = "https://s.gravatar.com/avatar/7b5a0b07a98895278cfa862b1f32ae8f?s=200&r=g&d=retro"
+
+[menu]
+  [[menu.main]]
+    identifier = "/"
+    name = "HOME"
+    title = "HOME"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "/posts"
+    name = "POSTS"
+    title = "POSTS"
+    url = "/posts"
+    weight = 2
+  [[menu.main]]
+    identifier = "/about"
+    name = "ABOUT"
+    title = "ABOUT"
+    url = "/about"
+    weight = 4
+
+
+[permalinks]
+  posts = "/:section/:year:month:day:15:04/"
+
+[params]
+  keywords = ["hugo", "theme", "kikyo", "kagome", "个人博客", "主题"]
+  description = "Hugo主题Kagome演示站点"
+  mainSections = ["posts"]
+  toc_show_len = 300
+
+  [params.widget]
+    articles_count = 6
+    categories_count = 6
+    tags_count = 12
+
+  [params.social]
+    github = "miiiku"
+    twitter = "guanquanhong"
+    weibo = "5561168966"
+    zhihu = "miku-84"
+    instagram = ""
+
+  [params.aplayer]
+    theme = "#b7daff"
+    autoplay = false
+    loop = "none"
+    mutex = true
+
+  [params.dplayer]
+    theme = "#b7daff"
+    autoplay = false
+    loop = false
+    mutex = true
