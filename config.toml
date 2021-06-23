@@ -32,10 +32,6 @@ hasCJKLanguage = true
     url = "/about"
     weight = 4
 
-
-[permalinks]
-  posts = "/:section/:year:month:day:15:04/"
-
 [params]
   keywords = ["hugo", "theme", "kikyo", "kagome", "个人博客", "主题"]
   description = "Hugo主题Kagome演示站点"
