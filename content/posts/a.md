@@ -1,18 +1,17 @@
 ---
 title: "插入公式，图片与Widget目录显示"
 date: 2021-05-25T16:59:09+08:00
-categories: ['doc', 'test']
-tags: ['hugo', 'toc', 'markup', 'image']
+categories: ['doc']
+tags: ['toc', 'math', 'image']
 description: "测试hugo主题kagome中插入公式，插入图片和TOC目录显示"
 keywords: ['unit test', 'hugo']
-markup: md
+math: true
 toc: true
-cover: "https://cloud.miiiku.xyz/src/images/cover/cover-10.jpg?x-oss-process=style/webp"
 ---
 
 ## 公式显示
 
-如果需要显示公式，需要在*Front Matter*中添加`markup: md`，详见: [front-matter](https://gohugo.io/content-management/front-matter/)
+如果需要显示公式，需要在*Front Matter*中添加`math: md`，详见: [front-matter](https://gohugo.io/content-management/front-matter/)
 
 When $$a \ne 0$$, there are two solutions to $$ax^2 + bx + c = 0$$ and they are:
 

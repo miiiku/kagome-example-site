@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://example.com"
 languageCode = "en-us"
 title = "Kagome"
 theme = "kagome"
@@ -13,24 +13,62 @@ hasCJKLanguage = true
   avatar = "https://s.gravatar.com/avatar/7b5a0b07a98895278cfa862b1f32ae8f?s=200&r=g&d=retro"
 
 [menu]
+  # 顶部导航栏
   [[menu.main]]
     identifier = "/"
-    name = "HOME"
+    name = "🏠 HOME"
     title = "HOME"
     url = "/"
     weight = 1
   [[menu.main]]
     identifier = "/posts"
-    name = "POSTS"
+    name = "🗂️ POSTS"
     title = "POSTS"
     url = "/posts"
     weight = 2
   [[menu.main]]
     identifier = "/about"
-    name = "ABOUT"
+    name = "😈 ABOUT"
     title = "ABOUT"
     url = "/about"
+    weight = 3
+  
+  # 底部社交图标
+  [[menu.social]]
+    identifier = "github"
+    name = "github"
+    url = "https://github.com/miiiku"
+    weight = 1
+  [[menu.social]]
+    identifier = "twitter"
+    name = "twitter"
+    url = "https://twitter.com/guanquanhong"
+    weight = 2
+  [[menu.social]]
+    identifier = "instagram"
+    name = "instagram"
+    url = "https://www.instagram.com/sukoshi_dayo/"
+    weight = 3
+  [[menu.social]]
+    identifier = "weibo"
+    name = "weibo"
+    url = "https://weibo.com/u/5561168966"
     weight = 4
+  [[menu.social]]
+    identifier = "zhihu"
+    name = "zhihu"
+    url = "https://www.zhihu.com/people/miku-84"
+    weight = 5
+    
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+      
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
 
 [params]
   keywords = ["hugo", "theme", "kikyo", "kagome", "个人博客", "主题"]
@@ -42,13 +80,6 @@ hasCJKLanguage = true
     articles_count = 6
     categories_count = 6
     tags_count = 12
-
-  [params.social]
-    github = "miiiku"
-    twitter = "guanquanhong"
-    weibo = "5561168966"
-    zhihu = "miku-84"
-    instagram = ""
 
   [params.aplayer]
     theme = "#b7daff"

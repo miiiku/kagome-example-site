@@ -2,10 +2,9 @@
 title: "config.toml配置"
 date: 2021-06-09T11:32:04+08:00
 categories: ['doc']
-tags: ['hugo', 'config']
+tags: ['config']
 description: "config.toml在kagome中的配置项"
 toc: true
-cover: "https://cloud.miiiku.xyz/src/images/cover/cover-12.jpg?x-oss-process=style/webp"
 ---
 
 config配置文件中配置可参考Hugo官方文档: [Configure Hugo](https://gohugo.io/getting-started/configuration/)
@@ -13,6 +12,32 @@ config配置文件中配置可参考Hugo官方文档: [Configure Hugo](https://g
 这里主要补充`kagome`中所需要的一些配置项:
 
 `kagome`所需的配置项都在`config.toml`中的`[params]`中。
+
+
+## 导航栏
+
+导航栏的定义放在`menu`中，目前支持`menu.main`和`menu.social`两种。
+
+`menu.main`是页面顶部的主要导航栏，而`menu.social`则是页面底部的常用社交地址。
+
+Menu的相关属性可以查看Hugo官方文档:[menus](https://gohugo.io/variables/menus/)
+
+在`menu.social`中，目前只添加了`[github, twitter, instagram, weibo, zhihu]`这几个社交地址的Icon，采用的是svg，如果你要添加更多的社交地址，主要在`<theme>/layouts/partials/footer.html`自定义更多的社交图标。
+
+添加一个`GITHUB`社交地址:
+
+```toml
+[menu]
+  [[menu.social]]
+    # 唯一标识符
+    identifier = "github"
+    # 名称
+    name = "github"
+    # url地址
+    url = "https://github.com/miiiku"
+    # 权重 越小越靠前
+    weight = 1
+```
 
 ## 基本配置项:
 
@@ -53,20 +78,6 @@ widget小部件相关配置项在`[params]`下的`[params.widget]`中:
 | categories_count 	| number 	| 6       	| 分类widget条目数     	|
 | tags_count       	| number 	| 12      	| 标签widget条目数     	|
 
-
-## social 社交图标
-
-social相关配置项在`[params]`下的`[params.social]`中:
-
-注: 一般需要的值只是社交平台中你账号的唯一标识符，并不是一个网页URL链接。
-
-| key       	| describe  	| example      	|
-|-----------	|-----------	|--------------	|
-| github    	| github    	| miiiku       	|
-| twitter   	| 推特      	| guanquanhong 	|
-| weibo     	| 微博      	| 5561168966   	|
-| zhihu     	| 知乎      	| miku-84      	|
-| instagram 	| instagram 	|              	|
 
 ## aplayer 音乐播放器
 
