@@ -84,7 +84,7 @@ hasCJKLanguage = true
   toc_show_len = 300
 
   [params.analytics]
-    baidu = "c002d517ed91c82c91e4ee4ccdd7ca29"
+    baidu = "ce6f52295ca4633af0237491d4810283"
 
   [params.widget]
     articles_count = 6
