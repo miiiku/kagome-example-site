@@ -5,7 +5,7 @@ theme = "kagome"
 paginate = 7
 copyright = "© 2021 <a href=\"https://sukoshi.xyz\">Sukoshi</a>."
 hasCJKLanguage = true
-googleAnalytics = G-X01K8ZYRKC
+googleAnalytics = "G-X01K8ZYRKC"
 
 [privacy]
   [privacy.disqus]
