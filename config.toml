@@ -41,10 +41,10 @@ hasCJKLanguage = true
     url = "/"
     weight = 1
   [[menu.main]]
-    identifier = "/post"
-    name = "🗂️ POST"
-    title = "POST"
-    url = "/post"
+    identifier = "/posts"
+    name = "🗂️ POSTS"
+    title = "POSTS"
+    url = "/posts"
     weight = 2
   [[menu.main]]
     identifier = "/about"
