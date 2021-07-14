@@ -53,6 +53,12 @@ googleAnalytics = "G-X01K8ZYRKC"
     title = "ABOUT"
     url = "/about"
     weight = 3
+  [[menu.main]]
+    identifier = "/link"
+    name = "🔗 LINK"
+    title = "LINK"
+    url = "/link"
+    weight = 4
   
   # 底部社交图标
   [[menu.social]]
